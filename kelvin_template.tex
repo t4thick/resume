@@ -1,0 +1,170 @@
+%-----------------------------
+% Kelvin Tawiah Resume format
+% Contact info replaced with Richard Effah Yeboah
+%-----------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{2.0in}
+
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\urlstyle{same}
+
+% Section headings
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% Commands
+\newcommand{\resumeItem}[1]{\item\small{#1\vspace{-1pt}}}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \small #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{%
+  \vspace{1pt}\item
+  \parbox[t]{0.82\textwidth}{\small #1}\hfill\small #2\vspace{-6pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=1pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+%-------------------------------------------
+\begin{document}
+
+% ======= HEADING =======
+\begin{center}
+  {\Huge\bfseries\scshape Richard Effah Yeboah}\\[2pt]
+  \small
+  (614) 290-4260 $|$
+  \href{mailto:kkras5050@gmail.com}{\underline{kkras5050@gmail.com}} $|$
+  \href{https://github.com/t4thick}{\underline{GitHub}} $|$
+  \href{https://www.linkedin.com/in/richyeff}{\underline{LinkedIn}} $|$
+  \href{https://richardeffahyeboah.vercel.app}{\underline{Portfolio}}
+\end{center}
+
+% ======= EDUCATION =======
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Grambling State University}{Grambling, LA}
+    {B.S. in Computer Science (Sophomore) $|$ GPA: 4.0}{Expected May 2028}
+  \item[]\small\textbf{Honors:} President's List; CodePath \& IBM Alumnus \\
+  \textbf{Relevant Coursework:} Data Structures, Algorithms, Software Engineering, Web Development,
+    Database Systems, Cybersecurity, Artificial Intelligence, Discrete Structures
+\resumeSubHeadingListEnd
+
+% ======= PROJECTS =======
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{\href{https://lovelyqueenafricanmarket.com}{\underline{Lovely Queen African Market}}} $|$ \emph{Next.js, TypeScript, Supabase, Vercel, Playwright} $|$ \href{https://lovelyqueenafricanmarket.com}{\underline{Live Site}} $|$ \href{https://github.com/t4thick/chuck-and-rich}{\underline{GitHub}}}{Jan 2025 -- Present}
+  \resumeItemListStart
+    \resumeItem{Built and shipped production e-commerce platform for 100+ SKUs with catalog, cart, and checkout flows; live at \href{https://lovelyqueenafricanmarket.com}{lovelyqueenafricanmarket.com}}
+    \resumeItem{Developed full-stack features in Next.js with Supabase-backed data layer; 150+ commits of iterative product development in \href{https://github.com/t4thick/chuck-and-rich}{chuck-and-rich}}
+    \resumeItem{Configured CI/CD with GitHub Actions and deployed on Vercel for reliable production releases}
+    \resumeItem{Implemented Playwright end-to-end tests for core flows; iteratively improved checkout UX and order consistency based on owner feedback and live usage}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{\href{https://foodtruckk.vercel.app/}{\underline{Item7 Food Truck Ordering System}}} $|$ \emph{Python, Flask, PostgreSQL, SQLAlchemy, Redis, Stripe, Vercel} $|$ \href{https://foodtruckk.vercel.app/}{\underline{Live Demo}} $|$ \href{https://github.com/t4thick/project-foodtruck}{\underline{GitHub}}}{Jan 2025 -- Apr 2025}
+  \resumeItemListStart
+    \resumeItem{Designed relational schemas and RESTful API boundaries for 50+ menu items, carts, and orders; enforced server-side validation across CRUD operations}
+    \resumeItem{Built role-based staff portal (4 roles) with Stripe checkout, stateful error handling, and order-consistency guarantees}
+    \resumeItem{Optimized API performance with Redis caching; deployed serverlessly on Vercel for production access}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{QuantaFs --- Distributed File System} $|$ \emph{Team Project --- Java, gRPC, RocksDB, Raft}}{}
+  \resumeItemListStart
+    \resumeItem{Co-built a multi-node distributed file system using Raft consensus for leader election and log replication across a team-built cluster}
+    \resumeItem{Contributed Java gRPC microservices and RocksDB persistence layers; implemented concurrency controls for data consistency under load}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ======= EXPERIENCE =======
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {\href{https://lovelyqueenafricanmarket.com}{\underline{Lovely Queen African Market}}}{Jan 2025 -- Present}
+    {Freelance E-Commerce Developer}{Columbus, OH}
+  \resumeItemListStart
+    \resumeItem{Sole developer partnering with store ownership on product priorities, UX, and fulfillment for a live grocery retail business (see Projects)}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {JPMorgan Chase}{Feb 2025}
+    {Data Analyst, Data For Good Hackathon}{Virtual}
+  \resumeItemListStart
+    \resumeItem{On a 3-person hackathon team, built a data pipeline using pandas, NumPy, and SQLAlchemy to aggregate 100K+ Title I school records}
+    \resumeItem{Developed a logistic regression classifier with scikit-learn and k-fold cross-validation to identify high-risk underfunded schools}
+    \resumeItem{Built GeoPandas visualizations and zip-code mapping to correlate funding gaps with regional factors and district-level disparities}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {New Life International School}{Jan 2024 -- Dec 2024}
+    {ICT Instructor \& Data Administrator}{Kronum, Kumasi, Ghana}
+  \resumeItemListStart
+    \resumeItem{Designed and delivered a structured ICT curriculum with hands-on computing labs, measurably improving student proficiency across core software and productivity concepts}
+    \resumeItem{Automated student data validation using advanced Excel functions, reducing administrative processing time by $\sim$35\% while maintaining 100\% data integrity}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ======= TECHNICAL SKILLS =======
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, nosep]
+  \small\item{
+    \textbf{Languages:} TypeScript, JavaScript, Python, SQL, HTML/CSS \\
+    \textbf{Frameworks \& Libraries:} Next.js, React, Flask, Node.js, Tailwind CSS, REST APIs \\
+    \textbf{Databases \& Tools:} Supabase, PostgreSQL, Redis, Git/GitHub, GitHub Actions, Vercel, Playwright, Stripe \\
+    \textbf{Concepts:} Full-Stack Development, E-Commerce, CI/CD, Automated Testing, API Design
+  }
+\end{itemize}
+
+% ======= LEADERSHIP =======
+\section{Leadership \& Activities}
+\resumeSubHeadingListStart
+  \vspace{1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{Vice President, ACM (GSU Chapter)} & \small Jan 2025 -- May 2025 \\
+  \end{tabular*}\vspace{-6pt}
+  \resumeItemListStart
+    \resumeItem{Personally led technical workshops, interview prep, and resume review sessions that helped grow active membership from 17 $\to$ 53}
+    \resumeItem{Planned and coordinated campus hackathons and tech talks with volunteers and industry guests, engaging 100+ participants}
+  \resumeItemListEnd
+  \item[]\small\textbf{Additional Involvements:} ColorStack (Member); IBM SkillsBuild Scholar (Data Science); African Student Association
+\resumeSubHeadingListEnd
+
+\end{document}

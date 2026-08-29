@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in LaTeX – Jake's Template style
+% Font: Computer Modern / Latin Modern Roman (lmodern)
+% Name uses \textsc Small Caps for the authentic "R" shape
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+% ---- Core packages ----
+\usepackage{lmodern}           % Latin Modern = enhanced Computer Modern
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{latexsym}
+\usepackage{marvosym}
+
+% ---- Page geometry ----
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{2.0in}
+
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\urlstyle{same}
+
+% ---- Section heading: Bold, All-Caps, Small Caps, rule underneath ----
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% ---- Custom commands ----
+\newcommand{\resumeItem}[1]{%
+  \item\small{#1}%
+}
+
+% Company (bold) top-left, Date top-right
+% Role (italic) bottom-left, Location bottom-right
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{3pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \small #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+% Project heading: bold name | italic stack  \hfill  date
+\newcommand{\resumeProjectHeading}[2]{%
+  \vspace{3pt}\item
+  \parbox[t]{0.78\textwidth}{\small #1}\hfill\small #2\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%-------------------------------------------
+\begin{document}
+
+% ======= HEADING =======
+\begin{center}
+  {\Huge\bfseries\scshape Richard Effah Yeboah}\\[3pt]
+  \small
+  (614) 290-4260 $|$
+  \href{mailto:kkras5050@gmail.com}{\underline{kkras5050@gmail.com}} $|$
+  \href{https://github.com/t4thick}{\underline{GitHub}} $|$
+  \href{https://www.linkedin.com/in/richyeff}{\underline{LinkedIn}} $|$
+  \href{https://richardeffahyeboah.vercel.app}{\underline{Portfolio}}
+\end{center}
+
+% ======= EDUCATION =======
+\section{EDUCATION}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Grambling State University}{Expected May 2028}
+    {B.S. Computer Science (Sophomore) $|$ GPA: 4.0/4.0}{Ruston, Louisiana}
+  \vspace{4pt}
+  \small\item[]
+    \textbf{Honors:} President's List; CodePath \& IBM Alumnus \\
+    \textbf{Relevant Coursework:} Data Structures, Algorithms, Software Engineering,
+    Web Development, Database Systems, Cybersecurity
+\resumeSubHeadingListEnd
+
+% ======= EXPERIENCE =======
+\section{EXPERIENCE}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {\href{https://lovelyqueenafricanmarket.com}{\underline{Lovely Queen African Market}}}{Jan 2025 -- Present}
+    {E-Commerce Developer}{Remote}
+  \resumeItemListStart
+    \resumeItem{Architected and launched a full-stack e-commerce platform (React, Node.js, PostgreSQL)
+      with end-to-end ownership of data modeling, payment integration, and order-fulfillment workflows
+      for 100+ SKUs}
+    \resumeItem{Engineered a custom checkout flow with optimized UX and order-state consistency,
+      contributing to a $\sim$20\% improvement in customer retention}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {New Life International School}{Jan 2024 -- Dec 2024}
+    {ICT Instructor \& Data Administrator}{Kronum, Kumasi, Ghana}
+  \resumeItemListStart
+    \resumeItem{Designed and delivered a structured ICT curriculum with hands-on computing labs,
+      measurably improving student proficiency across core software and productivity concepts}
+    \resumeItem{Automated student data validation using advanced Excel functions, reducing
+      administrative processing time by $\sim$35\% while maintaining 100\% data integrity}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {God First Printing Press}{May 2024 -- Nov 2024}
+    {Graphic Designer}{Kumasi, Ghana (Part-Time)}
+  \resumeItemListStart
+    \resumeItem{Directed design execution for 15+ concurrent digital marketing projects (flyers,
+      banners, logos) in Photoshop, maintaining a 100\% on-time delivery rate for
+      high-priority brand assets}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ======= PROJECTS =======
+\section{PROJECTS}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{\href{https://foodtruckk.vercel.app/}{\underline{Item7 Food Truck Ordering System}}} $|$
+     \emph{Python, Flask, PostgreSQL, SQLAlchemy, REST API, Redis, Vercel, Stripe} $|$ \href{https://foodtruckk.vercel.app/}{\underline{Live Demo}} $|$ \href{https://github.com/t4thick}{\underline{GitHub}}}{Jan 2025 -- Apr 2025}
+  \resumeItemListStart
+    \resumeItem{Designed relational schemas and RESTful API boundaries for 50+ menu items,
+      carts, and orders; enforced server-side validation and data integrity across all
+      CRUD operations}
+    \resumeItem{Architected a role-based access control system (4 roles) for staff order
+      management; integrated Stripe checkout with stateful error handling and
+      order-consistency guarantees}
+    \resumeItem{Optimized API responsiveness under concurrent load using Redis caching and
+      stateless server patterns; deployed serverlessly on Vercel for scalable production access}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{\href{https://richardeffahyeboah.vercel.app}{\underline{Full-Stack Portfolio}}} $|$
+     \emph{Next.js, TypeScript, Tailwind CSS} $|$ \href{https://richardeffahyeboah.vercel.app}{\underline{Live Site}}}{Side Project}
+  \resumeItemListStart
+    \resumeItem{Engineered a high-performance portfolio (Next.js, TypeScript, Tailwind CSS)
+      with component-driven architecture, achieving 90+ Lighthouse SEO scores and
+      sub-second load times}
+    \resumeItem{Implemented scalable content structure using reusable section components,
+      enabling fast updates without layout regressions}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ======= TECHNICAL SKILLS =======
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, nosep]
+  \small\item{
+    \textbf{Languages:} Python, TypeScript, JavaScript, SQL, HTML/CSS \\
+    \textbf{Frameworks \& Libraries:} React, Next.js, Flask, Node.js, SQLAlchemy,
+      REST APIs, Tailwind CSS \\
+    \textbf{Core Concepts:} Full-Stack Development, Relational Data Modeling,
+      Role-Based Access Control, API Design, Caching Strategies \\
+    \textbf{Developer Tools:} Git/GitHub, PostgreSQL, Redis, Vercel, Stripe API, Excel
+  }
+\end{itemize}
+
+% ======= ACTIVITIES / LEADERSHIP =======
+\section{ACTIVITIES / LEADERSHIP}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {IBM SkillsBuild}{May 2025 -- Jun 2025}
+    {IBM Scholar -- Data Science Track}{Virtual}
+  \resumeItemListStart
+    \resumeItem{Completed end-to-end data workflows in Python (Jupyter Notebook, Watson
+      Studio); applied data wrangling and statistical analysis across multiple datasets
+      to derive actionable insights}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {ColorStack}{Sept 2024 -- Present}
+    {Member}{Grambling State University}
+  \resumeItemListStart
+    \resumeItem{Active member in technical community; CodePath \& IBM Alumnus;
+      certifications in Web Development, AI, Cybersecurity, Data, and IBM Enterprise
+      Design Thinking}
+  \resumeItemListEnd
+
+  \vspace{2pt}
+  \item[]\small\textbf{Clubs:} Advocacy for Climate Change Education $|$ ISSUP $|$
+    SECURE+ $|$ African Student Association
+
+\resumeSubHeadingListEnd
+
+\end{document}

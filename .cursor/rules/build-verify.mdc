@@ -1,0 +1,16 @@
+---
+description: Always run build and fix errors before continuing
+globs: "**/*.tex"
+alwaysApply: false
+---
+
+# Build verification for LaTeX resume
+
+When editing the resume or any buildable artifact:
+
+1. **Run the build** after making changes (e.g. `pdflatex -interaction=nonstopmode resume.tex` in this folder).
+2. **Check the result**: ensure exit code is 0 and, if applicable, read the log for errors or warnings (e.g. `resume.log` for "!" or "Error").
+3. **Fix any errors** before continuing or telling the user the task is done. Do not leave the project in a broken build state.
+4. If the build fails, fix the reported issues and re-run until the build succeeds.
+
+For this project, the main artifact is `resume.tex`; the build command is `pdflatex -interaction=nonstopmode resume.tex` (run from the project root).
