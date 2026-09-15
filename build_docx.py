@@ -112,7 +112,7 @@ contact_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
 set_spacing(contact_p, before=0, after=4)
 add_run(contact_p,
     '(614) 290-4260  |  kkras5050@gmail.com  |  github.com/t4thick  |  '
-    'linkedin.com/in/richard-effah-yeboah  |  Portfolio',
+    'linkedin.com/in/richyeff',
     size=9.5)
 
 # ============================================================
@@ -121,36 +121,23 @@ add_run(contact_p,
 add_section_heading(doc, 'Education')
 add_subheading(doc,
     'Grambling State University', 'Expected May 2028',
-    'B.S. Computer Science (Sophomore)  |  GPA: 4.0/4.0', 'Ruston, Louisiana')
+    'Bachelor of Science in Computer Science  |  GPA: 4.0/4.0', 'Grambling, Louisiana')
 
 p = doc.add_paragraph()
 set_spacing(p, before=4, after=0)
 add_run(p, 'Honors: ', bold=True, size=9.5)
-add_run(p, "President's List; CodePath & IBM Alumnus", size=9.5)
-
-p2 = doc.add_paragraph()
-set_spacing(p2, before=1, after=0)
-add_run(p2, 'Relevant Coursework: ', bold=True, size=9.5)
-add_run(p2, 'Data Structures, Algorithms, Software Engineering, Web Development, Database Systems, Cybersecurity', size=9.5)
+add_run(p, "President's List", size=9.5)
 
 # ============================================================
 # EXPERIENCE
 # ============================================================
 add_section_heading(doc, 'Experience')
 
-add_subheading(doc, 'Lovely Queen Mart', 'Jan 2025 – Present',
-               'E-Commerce Developer', 'Remote')
-add_bullet(doc, 'Built a full-stack e-commerce platform (React, Node.js, PostgreSQL) managing 100+ SKUs with secure payment integration and order-fulfillment workflows')
-add_bullet(doc, 'Redesigned ordering flow and site UX, improving customer retention by ~20% and engagement across the platform')
-
-add_subheading(doc, 'New Life International School', 'Jan 2024 – Dec 2024',
-               'ICT Instructor & Data Administrator', 'Kronum, Kumasi, Ghana')
-add_bullet(doc, 'Designed and delivered ICT curriculum with hands-on labs (Excel, productivity tools), improving student proficiency in core computing concepts')
-add_bullet(doc, 'Managed and validated student records in Excel, streamlining data accuracy and retrieval for administration workflows')
-
-add_subheading(doc, 'God First Printing Press', 'May 2024 – Nov 2024',
-               'Graphic Designer', 'Kumasi, Ghana (Part-Time)')
-add_bullet(doc, 'Produced print and digital marketing assets (flyers, banners, logos) in Photoshop; delivered on deadline with consistent brand quality')
+add_subheading(doc, 'Kintampo African Market  |  kintampoafricanmarket.com', 'Mar 2026 – Present',
+               'Freelance Full-Stack Developer', 'Columbus, Ohio')
+add_bullet(doc, 'Rebuilt and deployed a Next.js storefront for 150+ African and Caribbean products with customer accounts, Stripe checkout, local pickup, and nationwide shipping')
+add_bullet(doc, 'Implemented server-authoritative price validation, Stripe webhooks, unique payment records, refunds, and order-fulfillment workflows with TypeScript, Supabase, and PostgreSQL')
+add_bullet(doc, 'Built staff tools for catalog, inventory, customer, and shipping operations; maintain 61 Playwright tests across 13 files covering checkout, tax, refunds, receipts, navigation, and administrative APIs')
 
 # ============================================================
 # PROJECTS
@@ -161,61 +148,44 @@ p = doc.add_paragraph()
 set_spacing(p, before=3, after=0)
 tab_stops = p.paragraph_format.tab_stops
 tab_stops.add_tab_stop(Inches(6.5), 2)
-add_run(p, 'Item7 Food Truck Ordering System', bold=True)
+add_run(p, 'Prince Auto Inventory & POS System', bold=True)
 p.add_run('\t')
-add_run(p, 'Jan 2025 – Apr 2025')
+add_run(p, 'Aug 2026 – Present')
 
 p2 = doc.add_paragraph()
 set_spacing(p2, before=0, after=0)
-add_run(p2, 'Python, Flask, PostgreSQL, SQLAlchemy, REST API, Redis, Vercel, Stripe  |  Live Demo  |  GitHub', italic=True, size=9.5)
+add_run(p2, 'React, TypeScript, Supabase, PostgreSQL, PWA  |  prince-inventory-manager.vercel.app  |  github.com/t4thick/prince-inventory-manager', italic=True, size=9.5)
 
-add_bullet(doc, 'Engineered a full-stack ordering platform (Python, Flask, PostgreSQL, SQLAlchemy) with a relational data model for 50+ menu items, carts, and orders; implemented CRUD flows and server-side validation via RESTful endpoints')
-add_bullet(doc, 'Built a role-based staff portal (4 roles) for order and operations management; integrated Stripe checkout with robust error handling and order state consistency')
-add_bullet(doc, 'Implemented Redis caching and serverless deployment (Vercel) to improve API performance and scalability')
+add_bullet(doc, 'Built a role-based inventory and point-of-sale application for a mechanic shop with shared stock, parts and labor checkout, customer balances, printable receipts, and reports')
+add_bullet(doc, 'Implemented PostgreSQL functions that validate stock and atomically record sales, inventory changes, and financial snapshots; made offline retries idempotent to prevent duplicate sales')
+add_bullet(doc, 'Added an offline sales queue that syncs after reconnection and owner-controlled voids that restore stock while preserving an audit trail')
 
 p = doc.add_paragraph()
 set_spacing(p, before=3, after=0)
 tab_stops = p.paragraph_format.tab_stops
 tab_stops.add_tab_stop(Inches(6.5), 2)
-add_run(p, 'DevCanvas (Portfolio Site)', bold=True)
+add_run(p, 'Item7 Food Truck Management System', bold=True)
 p.add_run('\t')
-add_run(p, 'Side Project')
+add_run(p, 'Jan 2026')
 
 p2 = doc.add_paragraph()
 set_spacing(p2, before=0, after=0)
-add_run(p2, 'Next.js, TypeScript, Tailwind CSS  |  GitHub', italic=True, size=9.5)
+add_run(p2, 'Python, Flask, PostgreSQL, SQLAlchemy  |  foodtruckk.vercel.app  |  github.com/t4thick/project-foodtruck', italic=True, size=9.5)
 
-add_bullet(doc, 'Developed a responsive portfolio (Next.js, TypeScript, Tailwind CSS) with component-driven architecture to showcase projects and experience in a recruiter-scannable format')
-add_bullet(doc, 'Optimized page structure for SEO and fast navigation; maintained content through reusable sections and consistent formatting')
+add_bullet(doc, 'Developed a responsive ordering and operations application with customer checkout, real-time order tracking, staff scheduling, shift tracking, and role-based management tools')
+add_bullet(doc, 'Modeled users, menu items, orders, schedules, and shifts in PostgreSQL with SQLAlchemy; added CSRF protection, rate limiting, password hashing, and input validation')
 
 # ============================================================
 # TECHNICAL SKILLS
 # ============================================================
 add_section_heading(doc, 'Technical Skills')
-add_skills_line(doc, 'Languages: ',           'Python, TypeScript, JavaScript, SQL, HTML/CSS')
-add_skills_line(doc, 'Technologies/Frameworks: ', 'React, Next.js, Flask, Node.js, REST APIs, SQLAlchemy, PostgreSQL, Redis')
-add_skills_line(doc, 'Tools: ',               'Git/GitHub, Vercel, Stripe API, Excel')
-add_skills_line(doc, 'Concepts: ',            'Full-Stack Development, RESTful APIs, Relational Databases, Role-Based Access Control')
+add_skills_line(doc, 'Languages: ', 'TypeScript, JavaScript, Python, Java, SQL, HTML/CSS')
+add_skills_line(doc, 'Frameworks & Runtimes: ', 'Next.js, React, Flask, Node.js, Tailwind CSS')
+add_skills_line(doc, 'Data & Services: ', 'PostgreSQL, Supabase, Redis, SQLAlchemy, Stripe')
+add_skills_line(doc, 'Testing & Tools: ', 'Playwright, Vitest, Git, GitHub Actions, Vercel')
+add_skills_line(doc, 'Engineering: ', 'Full-Stack Development, REST APIs, Authentication, Relational Data Modeling')
 
 # ============================================================
-# ACTIVITIES / LEADERSHIP
-# ============================================================
-add_section_heading(doc, 'Activities / Leadership')
-
-add_subheading(doc, 'IBM SkillsBuild', 'May 2025 – Jun 2025',
-               'IBM Scholar – Data Science Track', 'Virtual')
-add_bullet(doc, 'Completed end-to-end data workflows in Python (Jupyter Notebook, Watson Studio); applied data wrangling and statistical analysis across multiple datasets to derive actionable insights')
-
-add_subheading(doc, 'ColorStack', 'Sept 2024 – Present',
-               'Member', 'Grambling State University')
-add_bullet(doc, 'Active member in technical community; CodePath & IBM Alumnus; certifications in Web Development, AI, Cybersecurity, Data, and IBM Enterprise Design Thinking')
-
-p = doc.add_paragraph()
-set_spacing(p, before=3, after=0)
-add_run(p, 'Clubs: ', bold=True, size=9.5)
-add_run(p, 'Advocacy for Climate Change Education  |  ISSUP  |  SECURE+  |  African Student Association', size=9.5)
-
-# ============================================================
-out = r"c:\Users\tfott\OneDrive\Desktop\jakes template resume\resume.docx"
+out = "resume.docx"
 doc.save(out)
 print(f"Saved: {out}")
