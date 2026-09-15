@@ -111,7 +111,7 @@ contact_p = doc.add_paragraph()
 contact_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
 set_spacing(contact_p, before=0, after=4)
 add_run(contact_p,
-    '(614) 290-4260  |  kkras5050@gmail.com  |  github.com/t4thick  |  '
+    '(614) 290-4260  |  kkras5050@gmail.com  |  github.com/richardeyeboah  |  '
     'linkedin.com/in/richyeff',
     size=9.5)
 
@@ -154,7 +154,7 @@ add_run(p, 'Aug 2026 – Present')
 
 p2 = doc.add_paragraph()
 set_spacing(p2, before=0, after=0)
-add_run(p2, 'React, TypeScript, Supabase, PostgreSQL, PWA  |  prince-inventory-manager.vercel.app  |  github.com/t4thick/prince-inventory-manager', italic=True, size=9.5)
+add_run(p2, 'React, TypeScript, Supabase, PostgreSQL, PWA  |  prince-inventory-manager.vercel.app  |  github.com/richardeyeboah/prince-inventory-manager', italic=True, size=9.5)
 
 add_bullet(doc, 'Built a role-based inventory and point-of-sale application for a mechanic shop with shared stock, parts and labor checkout, customer balances, printable receipts, and reports')
 add_bullet(doc, 'Implemented PostgreSQL functions that validate stock and atomically record sales, inventory changes, and financial snapshots; made offline retries idempotent to prevent duplicate sales')
@@ -170,7 +170,7 @@ add_run(p, 'Jan 2026')
 
 p2 = doc.add_paragraph()
 set_spacing(p2, before=0, after=0)
-add_run(p2, 'Python, Flask, PostgreSQL, SQLAlchemy  |  foodtruckk.vercel.app  |  github.com/t4thick/project-foodtruck', italic=True, size=9.5)
+add_run(p2, 'Python, Flask, PostgreSQL, SQLAlchemy  |  foodtruckk.vercel.app  |  github.com/richardeyeboah/project-foodtruck', italic=True, size=9.5)
 
 add_bullet(doc, 'Developed a responsive ordering and operations application with customer checkout, real-time order tracking, staff scheduling, shift tracking, and role-based management tools')
 add_bullet(doc, 'Modeled users, menu items, orders, schedules, and shifts in PostgreSQL with SQLAlchemy; added CSRF protection, rate limiting, password hashing, and input validation')
